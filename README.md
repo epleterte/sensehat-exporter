@@ -16,7 +16,7 @@ Installation
 
 ### Run as a service
 
-    cp sensehat-exporter.service.example /etc/system/systemd/sensehat-exporter.service
+    cp sensehat-exporter.service.example /etc/systemd/system/sensehat-exporter.service
     systemctl daemon-reload
     systemctl start sensehat-exporter
     systemctl enable sensehat-exporter
@@ -34,7 +34,7 @@ Usage
 Configuration
 -------------
 
-Currently there are no other configuration options and no configuration file.
+Currently there are no other configuration than options IP/port and no configuration file.
 
 
 TODO
