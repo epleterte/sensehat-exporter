@@ -9,7 +9,9 @@ Installation
 
     git clone https://github.com/epleterte/sensehat-exporter.git
     cd sensehat-exporter
+    pip3 install -r requirements.txt
     sudo cp sensehat-exporter.py /usr/local/bin/sensehat-exporter
+    # start sensehat-exporter!
     sensehat-exporter
 
 ### Run as a service
