@@ -3,6 +3,11 @@ Sensehat Prometheus Exporter
 
 A simple Prometheus exporter for exporting values from the Raspberry Pi SenseHat.
 
+Requirements
+------------
+
+* Raspberry Pi (3/3+/4)
+* [Rasperry Pi SenseHat](https://www.raspberrypi.org/products/sense-hat/)
 
 Installation
 ------------
@@ -36,7 +41,17 @@ Configuration
 
 Currently there are no other configuration than options IP/port and no configuration file.
 
+Prometheus Configuration
+------------------------
 
+In _/etc/prometheus/prometheus.yml_, Add a static scrape target under `scrape_configs`:
+
+    scrape_configs:
+      - job_name: 'sensehat'
+        static_configs:
+        - targets: ['<ip>:9101'] 
+
+    
 TODO
 ----
 
