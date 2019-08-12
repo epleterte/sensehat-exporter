@@ -1,14 +1,19 @@
 # SenseHat service unit
 # Setup with:
 # # useradd -r -d /opt/sensehat-exporter sensehat
-#
+# or run as i.e. 'pi'
+
 [Unit]
 Description=SenseHat Metrics Exporter Service
 
 [Service]
-User=sensehat
-Group=sensehat
-ExecStart=/opt/sensehat-exporter/sensehat-exporter.py \
+#User=sensehat
+#Group=sensehat
+User=pi
+Group=pi
+#ExecStart=/opt/sensehat-exporter/sensehat-exporter.py \
+#    --port 9101
+ExecStart=sensehat-exporter \
     --port 9101
 
 StandardOutput=null
