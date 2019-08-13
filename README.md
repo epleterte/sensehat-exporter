@@ -55,8 +55,16 @@ In _/etc/prometheus/prometheus.yml_, Add a static scrape target under `scrape_co
 TODO
 ----
 
+* Upload example Grafana dashboard
 * Export more sensor data - currently only temperature, humidity and pressure is exported.
 * Possibly make additional sensors configurable.
+
+Demo
+----
+
+Here's a screenshot of the data being put to use in a Grafana dashboard:
+
+![Grafana RPi Sensehat dashboard screenshot][images/screenshot_2019-08-13.png]
 
 License
 -------
