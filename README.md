@@ -64,7 +64,7 @@ Demo
 
 Here's a screenshot of the data being put to use in a Grafana dashboard:
 
-![Grafana RPi Sensehat dashboard screenshot][images/screenshot_2019-08-13.png]
+![Grafana RPi Sensehat dashboard screenshot](images/screenshot_2019-08-13.png)
 
 License
 -------
