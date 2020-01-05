@@ -35,6 +35,7 @@ Usage
       -h, --help     show this help message and exit
       --port [PORT]  The TCP port to listen on (default: 9101)
       --bind [BIND]  The interface/IP to bind to (default: 0.0.0.0)
+      --orientation  Enable 'orientation' data (roll, yaw, pitch)
 
 Configuration
 -------------
