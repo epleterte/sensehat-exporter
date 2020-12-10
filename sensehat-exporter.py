@@ -43,9 +43,13 @@ class SenseHatCollector():
         temperature = self.sense.get_temperature()
         humidity = self.sense.get_humidity()
         pressure = self.sense.get_pressure()
+        temperature_from_humidity = self.sense.get_temperature_from_humidity()
+        temperature_from_pressure = self.sense.get_temperature_from_pressure()
 
         metric = Metric('rpi_sensehat', 'sensehat metric values', 'gauge')
         metric.add_sample('rpi_sensehat_temperature', value=temperature, labels={'name': 'SenseHat Temperature'})
+        metric.add_sample('rpi_sensehat_temperature_from_humidity', value=temperature_from_humidity, labels={'name': 'SenseHat Temperature from humidity sensor'})
+        metric.add_sample('rpi_sensehat_temperature_from_pressure', value=temperature_from_pressure, labels={'name': 'SenseHat Temperature from pressure sensor'})
         metric.add_sample('rpi_sensehat_humidity', value=humidity, labels={'name': 'SenseHat Humidity'})
         metric.add_sample('rpi_sensehat_pressure', value=pressure, labels={'name': 'SenseHat Pressure'})
         if self.orientation:
